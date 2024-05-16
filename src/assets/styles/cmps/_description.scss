@@ -1,0 +1,44 @@
+.desc {
+    background-color: var(--sacramento);
+    padding: rem(140px) rem(156px);
+    position: relative;
+
+    & h2 {
+        max-width: rem(445px);
+    }
+
+    & ul {
+        width: rem(540px);
+        gap: rem(32px);
+
+        & li {
+            display: grid;
+            grid-template-areas:
+                "img head"
+                "img p"
+            ;
+            column-gap: rem(23px);
+            row-gap: rem(16px);
+
+            & img {
+                grid-area: img;
+            }
+
+            h3 {
+                grid-area: head;
+                color: var(--light-coral);
+            }
+
+            p {
+                grid-area: p;
+                @include body-txt2
+            }
+        }
+    }
+
+    &>img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

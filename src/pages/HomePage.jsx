@@ -1,7 +1,14 @@
+import { AppFooter } from '../cmps/AppFooter'
+import { CoralFooter } from '../cmps/CoralFooter'
+import { Description } from '../cmps/Description'
 import { Hero } from '../cmps/Hero'
+import { Quotes } from '../cmps/Quotes'
 
 export function HomePage() {
-    return <div>
+    return <>
         <Hero />
-    </div>
+        <Description />
+        <Quotes />
+        <CoralFooter />
+    </>
 }

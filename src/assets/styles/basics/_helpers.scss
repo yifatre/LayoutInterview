@@ -55,3 +55,11 @@
 .hide {
     display: none;
 }
+
+.pill-btn {
+    border-radius: 3em;
+    border: 2px solid white;
+    background: none;
+    font-size: rem(18px);
+    padding: rem(10px) rem(32px);
+}

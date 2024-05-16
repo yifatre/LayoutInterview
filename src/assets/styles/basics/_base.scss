@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Livvic;
+    color: white;
 }
 
 
@@ -13,6 +14,29 @@ h2,
 h3,
 p {
     margin: 0;
+}
+
+h1 {
+
+    &.large {
+        font-size: rem(100px);
+        line-height: rem(100px);
+    }
+
+    &.small {
+        font-size: rem(64px);
+        line-height: rem(56px);
+    }
+}
+
+h2 {
+    font-size: rem(48px);
+    line-height: rem(48px);
+}
+
+h3 {
+    font-size: rem(18px);
+    line-height: rem(28px);
 }
 
 button {

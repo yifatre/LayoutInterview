@@ -24,3 +24,13 @@ $mobile-breakpoint: 460px;
         @content;
     }
 }
+
+@mixin body-txt1 {
+    font-size: rem(18px);
+    line-height: rem(28px);
+}
+
+@mixin body-txt2 {
+    font-size: rem(15px);
+    line-height: rem(25px);
+}

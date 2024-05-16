@@ -1,0 +1,52 @@
+.hero {
+
+    display: grid;
+    grid-template-columns: rem(620px) 1fr rem(445px);
+
+
+    position: relative;
+    padding: 56px 165px 250px;
+
+    background-color: #014E56;
+    color: white;
+
+    & h1 {
+        // max-width: rem(620px);
+
+        & .emph {
+            color: var(--light-coral);
+        }
+    }
+
+    & p {
+        @include body-txt1;
+        place-self: end;
+        grid-column: 3/4;
+
+        &::before {
+            content: "";
+            width: rem(50px);
+            height: rem(4px);
+            background-color: var(--rapture-blue);
+            position: absolute;
+            top: 56px;
+
+        }
+    }
+
+    & img {
+        position: absolute;
+
+        &.shapes1 {
+            left: 0;
+            bottom: 250px;
+        }
+
+        &.shapes2 {
+            bottom: 0;
+            right: 165px;
+        }
+    }
+
+
+}

@@ -1,13 +1,22 @@
-header {
-    height: 5rem;
-    padding: 0.5rem;
-    align-items: center;
+.app-header {
+    display: grid;
+    grid-template-areas: "logo nav . btn";
+    // justify-content: space-between;
+    
     width: 100vw;
-    display: flex;
+    padding: rem(73px) rem(165px);
+    
     background-color: #014E56;
     color: white;
 
+    
     & nav ul {
+        grid-area: nav;
         display: flex;
+    }
+
+    & button{
+        grid-area: btn;
+        // justify-self: end;
     }
 }
