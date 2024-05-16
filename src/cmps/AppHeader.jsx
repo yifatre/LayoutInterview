@@ -6,6 +6,6 @@ export function AppHeader() {
     return <header className='app-header'>
         <Link to='/'><img src={logo} alt="" /></Link>
         <MainNav />
-        <button className='pill-btn'>contact us</button>
+        <button className='pill-btn light'>contact us</button>
     </header>
 }

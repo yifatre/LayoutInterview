@@ -4,14 +4,16 @@ import { MainNav } from './MainNav'
 
 export function AppFooter() {
     return <footer>
-        <img src={logo} alt="" />
+        <img className='logo' src={logo} alt="" />
         <MainNav />
-        <p>987 Hillcrest Lane</p>
-        <p>Irvine, CA</p>
-        <p>California 92714</p>
-        <p>Call Us : 949-833-7432</p>
+        <div>
+            <p>987 Hillcrest Lane</p>
+            <p>Irvine, CA</p>
+            <p>California 92714</p>
+            <p>Call Us : 949-833-7432</p>
+        </div>
 
-        <img src={socials} alt="" />
+        <img className='soc' src={socials} alt="" />
         <p>Copyright 2020. All Rights Reserved</p>
     </footer>
 }

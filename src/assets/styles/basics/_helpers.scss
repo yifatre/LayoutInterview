@@ -62,8 +62,32 @@
 
 .pill-btn {
     border-radius: 3em;
-    border: 2px solid white;
     background: none;
     font-size: rem(18px);
     padding: rem(10px) rem(32px);
+
+    &.light {
+        border: 2px solid white;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: var(--sacramento);
+        }
+
+    }
+
+    &.dark {
+        border: 2px solid var(--sacramento);
+        color: var(--sacramento);
+
+        &:hover {
+            background-color: var(--sacramento);
+            color: white;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.25;
+    }
 }

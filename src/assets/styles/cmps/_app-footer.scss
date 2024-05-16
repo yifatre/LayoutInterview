@@ -1,0 +1,40 @@
+footer{
+    display: grid;
+    grid-template-areas: 
+    "logo address socials"
+    "nav address rights"
+    ;
+
+    background-color: var(--dark-green);
+
+    padding: 48px 165px;
+
+    & .logo{
+        grid-area: logo;
+    }
+
+    & nav{
+        grid-area: nav;
+        width: rem(140px);
+    }
+
+    & div{
+        grid-area: address;
+
+    }
+    
+    & p{
+        @include body-txt2;
+        opacity: 0.6;
+    }
+
+    & .soc{
+        grid-area: socials;
+        justify-self: end;
+    }
+    
+    &>p{
+        grid-area: rights;
+        justify-self: end;
+    }
+}

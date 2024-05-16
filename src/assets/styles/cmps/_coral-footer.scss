@@ -1,0 +1,12 @@
+.coral-footer {
+    background-color: var(--light-coral);
+    position: relative;
+    padding: 76px 260px 76px 263px;
+
+    & img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}
